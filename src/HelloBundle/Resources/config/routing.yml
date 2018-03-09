@@ -1,0 +1,7 @@
+hello:
+    pattern:     /hello/{name}
+    defaults: { _controller: HelloBundle:Hello:index }
+hello_world:
+    pattern:     /hello_world/
+    defaults: { _controller: HelloBundle:Hello:hello }
+

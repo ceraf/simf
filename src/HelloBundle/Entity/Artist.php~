@@ -1,0 +1,9 @@
+<?php
+
+namespace HelloBundle\Entity;
+
+class Artist
+{
+    private $id;
+    private $name;
+}

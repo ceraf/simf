@@ -1,0 +1,19 @@
+sacprd_admin:
+    resource: "@SacprdAdminBundle/Resources/config/routing.php"
+    prefix:   /
+
+sacprd_page:
+    resource: "@SacprdPageBundle/Resources/config/routing.php"
+    prefix:   /
+
+sacprd_core:
+    resource: "@SacprdCoreBundle/Resources/config/routing.php"
+    prefix:   /
+
+hello:
+    resource: "@HelloBundle/Resources/config/routing.php"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
