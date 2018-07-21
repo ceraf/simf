@@ -20,7 +20,7 @@ class Category
 	/**
 	* @ORM\column(type="string", length=100, unique=true)
 	*/
-	protected $name;
+	protected $title;
 	
 	/**
 	* @ORM\column(type="text")
@@ -35,29 +35,6 @@ class Category
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set name
-     *
-     * @param string $name
-     * @return Category
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string 
-     */
-    public function getName()
-    {
-        return $this->name;
     }
 
     /**
@@ -81,5 +58,28 @@ class Category
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return Category
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string 
+     */
+    public function getTitle()
+    {
+        return $this->title;
     }
 }

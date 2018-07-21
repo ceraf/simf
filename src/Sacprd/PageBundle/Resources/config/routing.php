@@ -11,6 +11,7 @@ $collection->add('sacprd_page_list', new Route('/admin/pages', array(
 
 $collection->add('sacprd_page_edit', new Route('/admin/page/{id}', array(
     '_controller' => 'SacprdPageBundle:Adminpages:edit',
+	'id' => 0
 )));
 
 return $collection;

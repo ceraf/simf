@@ -5,7 +5,7 @@ namespace Sacprd\PageBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="Sacprd\PageBundle\Repository\CategoryRepository")
+ * @ORM\Entity
  * @ORM\Table(name="page_category")
  */
 class Category
@@ -20,7 +20,7 @@ class Category
 	/**
 	* @ORM\column(type="string", length=100, unique=true)
 	*/
-	protected $name;
+	protected $title;
 	
 	/**
 	* @ORM\column(type="text")
@@ -35,29 +35,6 @@ class Category
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set name
-     *
-     * @param string $name
-     * @return Category
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string 
-     */
-    public function getName()
-    {
-        return $this->name;
     }
 
     /**

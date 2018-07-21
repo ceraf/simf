@@ -5,7 +5,7 @@ use Symfony\Component\Routing\Route;
 
 $collection = new RouteCollection();
 
-$collection->add('sacprd_admin_home', new Route('/admin/home', array(
+$collection->add('sacprd_admin_home', new Route('/home', array(
     '_controller' => 'SacprdAdminBundle:Default:index',
 )));
 

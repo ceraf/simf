@@ -1,6 +1,6 @@
 sacprd_admin:
     resource: "@SacprdAdminBundle/Resources/config/routing.php"
-    prefix:   /
+    prefix:   /admin
 
 sacprd_page:
     resource: "@SacprdPageBundle/Resources/config/routing.php"
